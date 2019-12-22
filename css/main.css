@@ -1,6 +1,7 @@
 body {
   padding: 0;
   margin: 0;
+  height: 150vh;
 }
 a {
   color: white;
@@ -155,7 +156,6 @@ a {
 /*  */
 .container-social {
   background-color: white;
-  margin-left: 170px;
   padding-right: 0;
 }
 .social-title {
@@ -166,16 +166,12 @@ a {
   font-family: "Myriad Pro", sans-serif;
   padding: 25px 0 10px;
   margin: 0;
-  width: 600px;
 }
 .social {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid rgba(87, 85, 85, 0.5);
-  width: 100%;
   z-index: 99;
-  padding-bottom: 15px;
 }
 .social-text {
   font-size: 15px;
@@ -184,6 +180,7 @@ a {
   color: rgba(87, 85, 85, 0.7);
   margin: 0;
   width: 370px;
+  margin-bottom: 15px;
 }
 .social-all-icons {
   display: flex;
@@ -194,5 +191,9 @@ a {
   font-size: 45px;
   padding-right: 50px;
 }
-/* .social-icons:last-child {
-  padding-right: 25%; */
+.social-icons:last-child {
+  padding-right: 0;
+}
+.shadow {
+  box-shadow: 0 2px 2px rgba(122, 122, 122, 0.5);
+}
