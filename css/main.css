@@ -1,0 +1,198 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.container {
+  width: 1100px;
+  margin: auto;
+  justify-content: space-between;
+}
+.header_container {
+  display: flex;
+  align-items: center;
+}
+.header {
+  background-color: black;
+  padding: 16px 0;
+}
+.menu {
+  color: white;
+  margin: 0;
+}
+.menu_item {
+  display: inline-block;
+  margin-right: 40px;
+}
+/* для того, чтобы отключить последни элемент */
+.menu_item:last-child {
+  margin-right: 0;
+}
+
+.logo {
+  width: 70px;
+}
+/* новый блок */
+.top {
+  box-shadow: 0 0 0 1100px rgba(0, 0, 0, 0.6) inset;
+  background-image: url(../img/fon.jpeg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.description {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+.description_logo {
+  margin-bottom: 30px;
+}
+.description_title {
+  color: white;
+  line-height: 1.2;
+  font-size: 33px;
+  text-transform: uppercase;
+  font-family: "Myriad Pro", sans-serif;
+  font-weight: lighter;
+}
+.description_title:before {
+  content: "";
+  display: block;
+  /* margin: auto; */
+  height: 2px;
+  width: 70px;
+  background-color: white;
+  position: absolute;
+  top: 47%;
+}
+.description_text {
+  font-size: 16px;
+  font-family: "Myriad Pro", sans-serif;
+  line-height: 1.438;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 30px 0;
+}
+.discription_button {
+  display: inline-block;
+  border: 1px solid white;
+  padding: 10px 25px;
+  font-size: 15px;
+  color: white;
+  line-height: 1.2;
+  font-family: "OpenSans", sans-serif;
+}
+/*  */
+.top_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 90px;
+  padding-bottom: 100px;
+}
+.top-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 330px;
+  height: 400px;
+}
+.top-form-title {
+  text-transform: capitalize;
+  color: rgba(17, 6, 6, 0.7);
+  line-height: 1.2;
+  font-size: 20px;
+  font-family: "Myriad Pro", sans-serif;
+  text-align: center;
+  padding: 16px;
+  background-color: rgb(231, 231, 231);
+  margin: 0;
+  border-radius: 4px 4px 0 0;
+}
+.top-form-title-new_color {
+  text-transform: uppercase;
+  color: orange;
+  line-height: 1.2;
+  font-size: 20px;
+  font-family: "Myriad Pro", sans-serif;
+  font-weight: lighter;
+}
+.top-form_input {
+  padding: 40px 40% 7px 10px;
+  border: 1px solid transparent;
+  border-bottom-color: rgb(231, 231, 231, 0.7);
+  font-size: 14px;
+  font-family: "Myriad Pro", sans-serif;
+
+  /* width: 180px; */
+}
+.top-form_submit {
+  text-align: center;
+  background-color: orange;
+  color: white;
+  font-family: "Myriad Pro", sans-serif;
+  line-height: 1.2;
+  font-size: 18px;
+  padding: 19px;
+  text-transform: capitalize;
+  border-radius: 0 0 4px 4px;
+  border: 1px solid transparent;
+}
+.top-form-all_input {
+  padding: 10px 30px 35px;
+  background-color: white;
+  text-align: left;
+}
+
+/*  */
+.container-social {
+  background-color: white;
+  margin-left: 170px;
+  padding-right: 0;
+}
+.social-title {
+  text-transform: capitalize;
+  color: rgba(0, 0, 6, 0.75);
+  line-height: 1.2;
+  font-size: 20px;
+  font-family: "Myriad Pro", sans-serif;
+  padding: 25px 0 10px;
+  margin: 0;
+  width: 600px;
+}
+.social {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid rgba(87, 85, 85, 0.5);
+  width: 100%;
+  z-index: 99;
+  padding-bottom: 15px;
+}
+.social-text {
+  font-size: 15px;
+  font-family: "Myriad Pro", sans-serif;
+  line-height: 1.438;
+  color: rgba(87, 85, 85, 0.7);
+  margin: 0;
+  width: 370px;
+}
+.social-all-icons {
+  display: flex;
+  justify-content: center;
+}
+.social-icons {
+  color: rgba(107, 105, 105, 0.5);
+  font-size: 45px;
+  padding-right: 50px;
+}
+/* .social-icons:last-child {
+  padding-right: 25%; */
