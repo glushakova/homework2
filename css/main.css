@@ -1,7 +1,6 @@
 body {
   padding: 0;
   margin: 0;
-  height: 150vh;
 }
 a {
   color: white;
@@ -28,7 +27,7 @@ a {
   display: inline-block;
   margin-right: 40px;
 }
-/* для того, чтобы отключить последни элемент */
+/* для того, чтобы отключить последний элемент */
 .menu_item:last-child {
   margin-right: 0;
 }
@@ -164,14 +163,13 @@ a {
   line-height: 1.2;
   font-size: 20px;
   font-family: "Myriad Pro", sans-serif;
-  padding: 25px 0 10px;
+  padding: 15px 0 5px;
   margin: 0;
 }
 .social {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 99;
 }
 .social-text {
   font-size: 15px;
