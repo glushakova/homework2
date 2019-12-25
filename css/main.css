@@ -37,12 +37,14 @@ a {
 }
 /* новый блок */
 .top {
-  box-shadow: 0 0 0 1100px rgba(0, 0, 0, 0.6) inset;
+  box-shadow: 0 0 0 1100px rgba(0, 0, 0, 0.5) inset;
   background-image: url(../img/fon.jpeg);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  background-blend-mode: hard-light;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .description {
@@ -64,22 +66,19 @@ a {
   font-family: "Myriad Pro", sans-serif;
   font-weight: lighter;
 }
-.description_title:before {
+.description_title::after {
   content: "";
   display: block;
-  /* margin: auto; */
+  margin-top: 20px;
   height: 2px;
   width: 70px;
   background-color: white;
-  position: absolute;
-  top: 47%;
 }
 .description_text {
   font-size: 16px;
   font-family: "Myriad Pro", sans-serif;
   line-height: 1.438;
   color: rgba(255, 255, 255, 0.8);
-  padding: 30px 0;
 }
 .discription_button {
   display: inline-block;
@@ -101,9 +100,8 @@ a {
 .top-form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 330px;
-  height: 400px;
+  width: 360px;
+  height: 310px;
 }
 .top-form-title {
   text-transform: capitalize;
@@ -126,13 +124,14 @@ a {
   font-weight: lighter;
 }
 .top-form_input {
-  padding: 40px 40% 7px 10px;
+  display: block;
+  padding: 10px 20px;
   border: 1px solid transparent;
   border-bottom-color: rgb(231, 231, 231, 0.7);
   font-size: 14px;
   font-family: "Myriad Pro", sans-serif;
-
-  /* width: 180px; */
+  margin: 12px 10px 20px;
+  width: 80%;
 }
 .top-form_submit {
   text-align: center;
@@ -147,7 +146,7 @@ a {
   border: 1px solid transparent;
 }
 .top-form-all_input {
-  padding: 10px 30px 35px;
+  padding: 10px 30px 20px;
   background-color: white;
   text-align: left;
 }
@@ -184,14 +183,43 @@ a {
   display: flex;
   justify-content: center;
 }
-.social-icons {
-  color: rgba(107, 105, 105, 0.5);
-  font-size: 45px;
-  padding-right: 50px;
-}
-.social-icons:last-child {
-  padding-right: 0;
-}
 .shadow {
   box-shadow: 0 2px 2px rgba(122, 122, 122, 0.5);
 }
+.image-link {
+  display: inline-block;
+  width: 53px;
+  height: 46px;
+  background-image: url(../img/SocialMediaIcons.png);
+  background-repeat: no-repeat;
+  margin-right: 45px;
+}
+
+.icon-2 {
+  background-position: -87px 0;
+}
+
+.icon-3 {
+  background-position: -190px 0;
+}
+
+.icon-4 {
+  background-position: -282px 0;
+}
+
+.icon-5 {
+  background-position: -383px 0;
+}
+
+.icon-6 {
+  background-position: -484px 0;
+}
+.icon-7 {
+  background-position: -588px 0;
+  margin-right: 0;
+}
+/* .triangle {
+  border: 20px solid transparent;
+  border-top-color: brown;
+  border-top-width: 100%;
+} */
