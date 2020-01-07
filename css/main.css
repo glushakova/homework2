@@ -221,9 +221,90 @@ a {
 }
 /* end shadow */
 
+/* start tabs */
+.tabs {
+  height: 595px;
+  background-color: #f5f5f5;
+}
+.tabs-distance {
+  padding-top: 140px;
+  padding-bottom: 110px;
+}
+.form-tabs {
+  width: 110px;
+  height: 110px;
+  background-color: rgba(48, 46, 46);
+  font-size: 15px;
+  line-height: 100px;
+  color: #ffffff;
+  font-family: "Myriad Pro", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.616);
+}
+.form-tabs:last-child {
+  border-radius: 0 0 3px 3px;
+}
+.form-tabs:first-child {
+  background-color: orange;
+  border-radius: 3px 3px 0 0;
+}
+.content-tabs-all {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.tabs-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.headline {
+  font-size: 20px;
+  color: #000000;
+  font-family: "Myriad Pro", sans-serif;
+  font-weight: 600;
+}
+.tabs_text {
+  color: rgba(150, 149, 149, 0.9);
+  font-size: 15px;
+  font-family: "Myriad Pro", sans-serif;
+  line-height: 1.438;
+  margin-top: 0;
+  margin-bottom: 55px;
+  width: 510px;
+}
+.tabs_text-one {
+  margin: 40px 0 20px;
+}
+.tabs_text-two {
+  margin-bottom: 40px;
+}
+.description_town {
+  width: 340x;
+  height: 260px;
+}
+.button_tabs {
+  display: inline-block;
+  border: 1px solid orange;
+  padding: 10px 25px;
+  font-size: 15px;
+  color: white;
+  text-transform: capitalize;
+  line-height: 1.2;
+  font-family: "OpenSans", sans-serif;
+  background-color: orange;
+  box-shadow: 0 2px 2px rgba(122, 122, 122, 0.3);
+  border-radius: 4px;
+  width: 70px;
+}
+/* end tabs */
+
 /* start awesom */
 .back_size {
-  height: 580px;
+  height: 590px;
 }
 .haupt_text {
   text-transform: uppercase;
@@ -273,7 +354,7 @@ a {
 /* start pricing */
 .pricing {
   height: 860px;
-  background-color: rgb(231, 231, 231, 0.5);
+  background-color: #f5f5f5;
 }
 .form-pricing {
   display: flex;
@@ -492,7 +573,7 @@ a {
 
 /* start contact */
 .contact {
-  height: 570px;
+  height: 612px;
 }
 .button_contact {
   display: inline-block;
