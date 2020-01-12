@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   padding: 0;
   margin: 0;
@@ -229,36 +232,42 @@ a {
 .tabs-distance {
   padding-top: 140px;
 }
-.form-tabs {
-  width: 110px;
-  height: 110px;
-  background-color: rgba(48, 46, 46);
-  font-size: 15px;
-  color: #ffffff;
-  font-family: "Myriad Pro", sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-  display: block;
-}
-.form-tabs:hover {
-  background-color: orange;
-}
-.form-tabs:last-child {
-  border-radius: 0 0 3px 3px;
-}
-.form-tabs:first-child {
-  border-radius: 3px 3px 0 0;
-}
 .content-tabs-all {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.tabs-one {
+.checkbox {
+  display: none;
+}
+.checkbox:checked ~ .fake-checkbox {
+  background-color: orange;
+}
+.checkbox:checked ~ .tabs-one {
+  display: block;
+}
+.fake-checkbox {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(46, 44, 44);
+  font-size: 15px;
+  color: white;
+  font-family: "Myriad Pro", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2px;
+}
+.wrapper {
+  position: relative;
+}
+.tabs-one {
+  position: absolute;
+  top: -5%;
+  left: 180px;
+  display: none;
 }
 .headline {
   font-size: 20px;
@@ -280,7 +289,7 @@ a {
   margin: 40px 0 20px;
 }
 .tabs_text-two {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 .description_town {
   width: 340x;
@@ -337,9 +346,8 @@ a {
 .item {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
-  margin: 0px 30px;
+  width: 354px;
 }
 .img {
   height: 85px;
@@ -348,6 +356,7 @@ a {
 .row {
   display: flex;
   margin-top: 80px;
+  justify-content: space-between;
 }
 /* end awesom */
 
@@ -480,7 +489,6 @@ a {
 }
 .about-customer {
   display: flex;
-  flex-direction: row;
 }
 .img_customer {
   margin-top: 5px;
@@ -511,7 +519,6 @@ a {
 
 /* start stylish */
 .background_stylish {
-  /* box-shadow: 0 0 0 1100px rgba(0, 0, 0, 0.5) inset; */
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(../img/u25_state0.png);
   background-size: cover;
@@ -589,7 +596,6 @@ a {
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-end;
-  margin: 10px 10px 14px;
 }
 .container-contact {
   display: flex;
