@@ -293,9 +293,9 @@
 }
 
 @media (max-width: 576px) {
- body {
-  min-width: 320px;
- }
+  body {
+    min-width: 320px;
+  }
   .container {
     width: 90%;
   }
@@ -313,16 +313,16 @@
     width: 85%;
   }
   /* shadow */
-  .social-title{
+  .social-title {
     font-size: 18px;
   }
-  .social-text{
+  .social-text {
     font-size: 14px;
   }
   .social-all-icons {
     padding-left: 0;
   }
-  .image-link{
+  .image-link {
     margin-right: 10px;
   }
   .icon-7 {
@@ -359,7 +359,7 @@
   .tabs_text-two {
     margin-bottom: 40px;
   }
-  .tabs_text{
+  .tabs_text {
     font-size: 14px;
   }
   /* awesom */
@@ -373,16 +373,16 @@
   .haupt_text {
     font-size: 24px;
   }
-  .second_text{
+  .second_text {
     font-size: 13px;
   }
   /* pricing */
-  .form-pricing{
+  .form-pricing {
     flex-direction: column;
     align-items: center;
     padding-bottom: 0px;
   }
-  .form-pricing-all{
+  .form-pricing-all {
     width: 80%;
     padding-bottom: 30px;
   }
@@ -414,19 +414,20 @@
   .contact {
     height: auto;
   }
-  .container-contact{
+  .container-contact {
     flex-direction: column;
     height: auto;
   }
   .form-contact {
-   flex-direction: column;
-   width: 90%;
-   margin-top: -10px;
+    flex-direction: column;
+    width: 90%;
+    margin-top: -10px;
   }
   .stylish {
     margin-bottom: 30px;
-}
+  }
   /* footer */
   .image-link-end {
     margin-right: 10px;
   }
+}
