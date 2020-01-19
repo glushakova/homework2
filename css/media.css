@@ -320,7 +320,7 @@
     font-size: 14px;
   }
   .social-all-icons {
-    padding-left: 0;
+    padding-left: 10px;
   }
   .image-link {
     margin-right: 10px;
@@ -410,6 +410,9 @@
   .second_text_stylish {
     font-size: 14px;
   }
+  .stylish {
+    margin-bottom: 30px;
+  }
   /* contact */
   .contact {
     height: auto;
@@ -422,9 +425,6 @@
     flex-direction: column;
     width: 90%;
     margin-top: -10px;
-  }
-  .stylish {
-    margin-bottom: 30px;
   }
   /* footer */
   .image-link-end {
