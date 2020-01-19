@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
       rel="stylesheet"
@@ -17,7 +18,7 @@
         <a href="#">
           <img class="logo" src="img/logo.png" alt="AXIT" />
         </a>
-        <ul class="menu">
+        <ul class="menu" id="menu">
           <li class="menu_item">
             <a href="#features">Features</a>
           </li>
@@ -34,9 +35,12 @@
             <a href="#contact">Contact</a>
           </li>
         </ul>
+        <div class="burger" id="burger">
+          <span class="burger_line"></span>
+        </div>
       </div>
     </header>
-
+    <section class="bg" id="bg"></section>
     <section class="top">
       <div class="container top_container">
         <div class="description">
@@ -211,7 +215,7 @@
           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         </p>
         <div class="form-pricing">
-          <div>
+          <div class="form-pricing-all">
             <ul class="list">
               <li class="list-first-one">Basic</li>
               <li class="list-first-two">$<b class="list-number">0</b></li>
@@ -226,7 +230,7 @@
               <li class="list-second-item">email support</li>
             </ul>
           </div>
-          <div>
+          <div class="form-pricing-all">
             <ul class="list">
               <li class="list-first-one">Professional</li>
               <li class="list-first-two">$<b class="list-number">19</b></li>
@@ -242,7 +246,7 @@
               <li class="list-second-item">email support</li>
             </ul>
           </div>
-          <div>
+          <div class="form-pricing-all">
             <ul class="list">
               <li class="list-first-one">enterprise</li>
               <li class="list-first-two">$<b class="list-number">70</b></li>
@@ -269,7 +273,7 @@
       </p>
 
       <div class="customer-review">
-        <div class="customer-review-item">
+        <div class="customer-all">
           <p class="customers_block">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque ea
             id cumque blanditiis distinctio saepe delectus quisquam doloribus
@@ -284,7 +288,7 @@
           </div>
         </div>
 
-        <div class="customer-review-item">
+        <div class="customer-all">
           <p class="customers_block">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque ea
             id cumque blanditiis distinctio saepe delectus quisquam doloribus
@@ -299,7 +303,7 @@
           </div>
         </div>
 
-        <div class="customer-review-item">
+        <div class="customer-all">
           <p class="customers_block">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque ea
             id cumque blanditiis distinctio saepe delectus quisquam doloribus
@@ -343,7 +347,7 @@
           <textarea
             placeholder="Message"
             rows="10"
-            class="top-form_input"
+            class="top-form_input textarea"
           ></textarea>
         </div>
       </div>
@@ -369,5 +373,6 @@
         <div class="text-end">© 2015 Axure Themes</div>
       </div>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -14,6 +14,7 @@ a {
   width: 1100px;
   margin: auto;
   justify-content: space-between;
+  position: relative;
 }
 .header_container {
   display: flex;
@@ -22,7 +23,7 @@ a {
 .header {
   background-color: black;
   padding: 16px 0;
-  z-index: 1;
+  z-index: 2;
   position: fixed;
   width: 100%;
 }
@@ -33,6 +34,9 @@ a {
 .menu_item {
   display: inline-block;
   margin-right: 40px;
+}
+.burger {
+  display: none;
 }
 /* для того, чтобы отключить последний элемент */
 .menu_item:last-child {
@@ -179,7 +183,6 @@ a {
 }
 .social {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 .social-text {
@@ -222,7 +225,7 @@ a {
   background-position: -484px 0;
 }
 .icon-7 {
-  background-position: -588px 0;
+  background-position: -595px 0;
   margin-right: 0;
 }
 /* end shadow */
@@ -295,7 +298,7 @@ a {
   margin-bottom: 50px;
 }
 .description_town {
-  width: 340x;
+  width: 27%;
   height: 260px;
 }
 .button_tabs {
@@ -394,8 +397,7 @@ a {
   letter-spacing: 0.5px;
   font-weight: bold;
   text-align: center;
-  width: 340px;
-  padding: 17px 0;
+  padding: 17px 72px;
   background-color: rgba(48, 46, 46);
   border-bottom: 1px solid rgba(255, 255, 255);
   line-height: 24px;
@@ -405,7 +407,6 @@ a {
   text-transform: capitalize;
   color: rgba(255, 255, 255);
   text-align: center;
-  width: 340px;
   padding-top: 30px;
   padding-bottom: 5px;
   background-color: rgba(48, 46, 46);
@@ -419,8 +420,7 @@ a {
   text-transform: capitalize;
   color: rgba(255, 255, 255, 0.6);
   text-align: center;
-  width: 340px;
-  padding: 15px 0;
+  padding: 15px 72px;
   background-color: rgba(48, 46, 46);
   font-style: italic;
   font-family: "Myriad Pro", sans-serif;
@@ -431,8 +431,7 @@ a {
   text-transform: uppercase;
   color: rgba(255, 255, 255);
   text-align: center;
-  width: 340px;
-  padding: 10px 0;
+  padding: 10px 72px;
   background-color: orange;
   font-family: "Myriad Pro", sans-serif;
   font-size: 13px;
@@ -447,13 +446,13 @@ a {
 }
 .list-second-item {
   background-color: rgba(255, 255, 255, 0.7);
-  height: 20px;
-  width: 340px;
-  padding: 10px 0;
+  padding: 10px 72px;
   text-align: center;
   border-bottom: 1px solid rgba(100, 98, 98, 0.1);
 }
-
+.form-pricing-all {
+  margin: 0;
+}
 /* end pricing */
 
 /* start customer */
@@ -461,9 +460,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.customer-review-item {
-  margin-right: 120px;
 }
 .customer-review-item:last-child {
   margin-right: 0;
@@ -606,6 +602,9 @@ a {
 }
 .form-input-contact {
   width: 460px;
+}
+.textarea {
+  resize: none;
 }
 /* end contact */
 
