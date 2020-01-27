@@ -9,26 +9,78 @@ a {
   color: white;
   text-decoration: none;
 }
+
+/* all */
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.space-between-content {
+  justify-content: space-between;
+}
+.column {
+  flex-direction: column;
+}
+.text-align {
+  text-align: center;
+}
+.button_orange {
+  display: inline-block;
+  border: 1px solid orange;
+  padding: 10px 25px;
+  font-size: 15px;
+  text-transform: capitalize;
+  line-height: 1.2;
+  font-family: "OpenSans", sans-serif;
+  background-color: orange;
+  box-shadow: 0 2px 2px rgba(122, 122, 122, 0.3);
+  border-radius: 4px;
+}
+.button_white {
+  display: inline-block;
+  border: 1px solid white;
+  padding: 10px 25px;
+  font-size: 15px;
+  line-height: 1.2;
+  font-family: "OpenSans", sans-serif;
+}
+.white {
+  color: white;
+}
+.white-transparency {
+  color: rgba(255, 255, 255, 0.7);
+}
+.grey-transparency {
+  color: rgba(87, 85, 85, 0.7);
+}
+.width {
+  width: 80%;
+  margin: auto;
+}
+
 /* start header */
-.container {
+.container-me {
   width: 1100px;
   margin: auto;
   justify-content: space-between;
   position: relative;
 }
-.header_container {
-  display: flex;
-  align-items: center;
+.box {
+  height: auto;
+  padding: 50px 0;
 }
 .header {
   background-color: black;
-  padding: 16px 0;
   z-index: 2;
   position: fixed;
   width: 100%;
+  height: 56px;
 }
 .menu {
-  color: white;
   margin: 0;
 }
 .menu_item {
@@ -38,7 +90,6 @@ a {
 .burger {
   display: none;
 }
-/* для того, чтобы отключить последний элемент */
 .menu_item:last-child {
   margin-right: 0;
 }
@@ -61,7 +112,6 @@ a {
 .description {
   width: 500px;
   display: flex;
-  flex-direction: column;
   align-items: baseline;
   justify-content: space-around;
 }
@@ -69,7 +119,6 @@ a {
   margin-bottom: 20px;
 }
 .description_title {
-  color: white;
   line-height: 1.2;
   font-size: 33px;
   text-transform: uppercase;
@@ -83,47 +132,32 @@ a {
   margin-top: 30px;
   height: 2px;
   width: 70px;
-  background-color: white;
 }
 .description_text {
   font-size: 16px;
   font-family: "Myriad Pro", sans-serif;
   line-height: 1.438;
   color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 30px;
-}
-.discription_button {
-  display: inline-block;
-  border: 1px solid white;
-  padding: 10px 25px;
-  font-size: 15px;
-  color: white;
-  line-height: 1.2;
-  font-family: "OpenSans", sans-serif;
+  margin: 30px 0;
 }
 
 /*  */
 
 .top_container {
-  display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding-top: 90px;
-  padding-bottom: 100px;
+  padding: 150px 0;
 }
 .top-form {
   display: flex;
-  flex-direction: column;
   width: 360px;
   height: 310px;
 }
 .top-form-title {
   text-transform: capitalize;
-  color: rgba(17, 6, 6, 0.7);
+  color: rgba(17, 6, 6, 0.8);
   line-height: 1.2;
   font-size: 20px;
   font-family: "Myriad Pro", sans-serif;
-  text-align: center;
   padding: 16px;
   background-color: rgb(231, 231, 231);
   margin: 0;
@@ -135,7 +169,7 @@ a {
   line-height: 1.2;
   font-size: 20px;
   font-family: "Myriad Pro", sans-serif;
-  font-weight: lighter;
+  font-weight: bold;
 }
 .top-form_input {
   display: block;
@@ -149,13 +183,11 @@ a {
   color: gray;
 }
 .top-form_submit {
-  text-align: center;
   background-color: orange;
-  color: white;
   font-family: "Myriad Pro", sans-serif;
   line-height: 1.2;
   font-size: 18px;
-  padding: 19px;
+  padding: 15px;
   text-transform: capitalize;
   border-radius: 0 0 4px 4px;
   border: 1px solid transparent;
@@ -181,12 +213,8 @@ a {
   padding: 15px 0 5px;
   margin: 0;
 }
-.social {
-  display: flex;
-  align-items: center;
-}
 .social-text {
-  font-size: 15px;
+  font-size: 13px;
   font-family: "Myriad Pro", sans-serif;
   line-height: 1.438;
   color: rgba(87, 85, 85, 0.7);
@@ -196,7 +224,6 @@ a {
 }
 .social-all-icons {
   display: flex;
-  justify-content: center;
 }
 .shadow {
   box-shadow: 0 2px 2px rgba(122, 122, 122, 0.5);
@@ -231,17 +258,8 @@ a {
 /* end shadow */
 
 /* start tabs */
-.tabs {
-  height: 595px;
-  background-color: #f5f5f5;
-}
 .tabs-distance {
-  padding-top: 140px;
-}
-.content-tabs-all {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding-top: 50px;
 }
 .checkbox {
   display: none;
@@ -257,21 +275,19 @@ a {
   width: 100px;
   background-color: rgb(46, 44, 44);
   font-size: 15px;
-  color: white;
   font-family: "Myriad Pro", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 2px;
 }
 .wrapper {
+  display: flex;
   position: relative;
+  flex-direction: column;
 }
 .tabs-one {
   position: absolute;
-  top: -5%;
+  top: 5%;
   left: 180px;
   display: none;
 }
@@ -279,7 +295,7 @@ a {
   font-size: 20px;
   color: #000000;
   font-family: "Myriad Pro", sans-serif;
-  font-weight: 600;
+  font-weight: 450;
 }
 .tabs_text {
   color: rgba(150, 149, 149, 0.9);
@@ -301,79 +317,55 @@ a {
   width: 27%;
   height: 260px;
 }
-.button_tabs {
-  display: inline-block;
-  border: 1px solid orange;
-  padding: 10px 25px;
-  font-size: 15px;
-  color: white;
-  text-transform: capitalize;
-  line-height: 1.2;
-  font-family: "OpenSans", sans-serif;
-  background-color: orange;
-  box-shadow: 0 2px 2px rgba(122, 122, 122, 0.3);
-  border-radius: 4px;
-  width: 70px;
+.label-me {
+  margin-bottom: 0;
 }
 /* end tabs */
 
 /* start awesom */
-.back_size {
-  height: 590px;
+.title {
+  font-family: "Myriad Pro", sans-serif;
+  margin-bottom: 50px;
 }
 .haupt_text {
   text-transform: uppercase;
-  padding-top: 80px;
-  text-align: center;
   line-height: 1.2;
   font-size: 33px;
-  font-family: "Myriad Pro", sans-serif;
   font-weight: lighter;
   margin-top: 0;
 }
 .haupt_text::after {
   content: "";
   display: block;
-  margin: auto;
-  margin-top: 25px;
+  margin: 25px auto;
   height: 2px;
   width: 70px;
   background-color: orange;
 }
 .second_text {
-  color: rgba(87, 85, 85, 0.7);
-  text-align: center;
-  font-size: 15px;
-  font-family: "Myriad Pro", sans-serif;
+  font-size: 14px;
   line-height: 1.438;
-  margin-top: 0;
-  margin-bottom: 55px;
 }
 .item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 354px;
 }
 .img {
   height: 85px;
   align-items: center;
 }
-.row {
+.row-item {
   display: flex;
-  margin-top: 80px;
   justify-content: space-between;
 }
 /* end awesom */
 
 /* start pricing */
-.pricing {
-  height: 860px;
+.background_grey {
   background-color: #f5f5f5;
 }
 .form-pricing {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-end;
 }
 .list {
@@ -384,19 +376,15 @@ a {
 .list-number {
   font-size: 80px;
   line-height: 24px;
-  color: #ffffff;
   font-family: "Raleway";
   font-weight: 900;
-  text-align: center;
 }
 .list-first-one {
   text-transform: capitalize;
-  color: rgba(255, 255, 255);
   font-family: "Myriad Pro", sans-serif;
   font-size: 20px;
   letter-spacing: 0.5px;
   font-weight: bold;
-  text-align: center;
   padding: 17px 72px;
   background-color: rgba(48, 46, 46);
   border-bottom: 1px solid rgba(255, 255, 255);
@@ -405,8 +393,6 @@ a {
 }
 .list-first-two {
   text-transform: capitalize;
-  color: rgba(255, 255, 255);
-  text-align: center;
   padding-top: 30px;
   padding-bottom: 5px;
   background-color: rgba(48, 46, 46);
@@ -419,7 +405,6 @@ a {
 .list-first-three {
   text-transform: capitalize;
   color: rgba(255, 255, 255, 0.6);
-  text-align: center;
   padding: 15px 72px;
   background-color: rgba(48, 46, 46);
   font-style: italic;
@@ -429,8 +414,6 @@ a {
 }
 .list-first-four {
   text-transform: uppercase;
-  color: rgba(255, 255, 255);
-  text-align: center;
   padding: 10px 72px;
   background-color: orange;
   font-family: "Myriad Pro", sans-serif;
@@ -456,17 +439,12 @@ a {
 /* end pricing */
 
 /* start customer */
-.customer-review {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 .customer-review-item:last-child {
   margin-right: 0;
 }
 .customers_block {
-  height: 80px;
-  width: 250px;
+  height: 155px;
+  width: 270px;
   background-color: rgba(212, 211, 211, 0.3);
   color: rgba(100, 98, 98, 0.7);
   border-radius: 3px;
@@ -474,7 +452,7 @@ a {
   margin-bottom: 15px;
   font-style: italic;
   font-family: "Myriad Pro", sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: lighter;
 }
 .customers_block::after {
@@ -495,8 +473,6 @@ a {
 }
 .customer-name {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   margin-left: 15px;
 }
 .text-customer {
@@ -522,83 +498,21 @@ a {
     url(../img/u25_state0.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 320px;
 }
-.stylish {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.haupt_text_stylish {
-  text-transform: uppercase;
-  line-height: 1.2;
-  font-size: 33px;
-  font-family: "Myriad Pro", sans-serif;
-  font-weight: lighter;
-  color: white;
-  padding-top: 40px;
-}
-.haupt_text_stylish::after {
-  content: "";
-  display: block;
-  margin: auto;
-  margin-top: 26px;
-  height: 2px;
-  width: 70px;
+.white::after {
   background-color: white;
-}
-.second_text_stylish {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 15px;
-  font-family: "Myriad Pro", sans-serif;
-  line-height: 1.438;
-  margin-top: 0;
-  margin-bottom: 35px;
-}
-.button_stylish {
-  display: inline-block;
-  border: 1px solid white;
-  padding: 10px 25px;
-  font-size: 15px;
-  color: white;
-  line-height: 1.2;
-  font-family: "OpenSans", sans-serif;
 }
 /* end stylish*/
 
 /* start contact */
-.contact {
-  height: 612px;
-}
-.button_contact {
-  display: inline-block;
-  border: 1px solid orange;
-  padding: 10px 25px;
-  font-size: 15px;
-  color: white;
-  text-transform: capitalize;
-  line-height: 1.2;
-  font-family: "OpenSans", sans-serif;
-  background-color: orange;
-  box-shadow: 0 2px 2px rgba(122, 122, 122, 0.3);
-  border-radius: 4px;
-}
 .form-contact {
-  display: flex;
-  flex-direction: column;
   justify-content: space-around;
-  align-items: center;
   width: 50%;
 }
 .container-contact {
-  display: flex;
   justify-content: space-between;
-  align-items: center;
   height: 40%;
   margin-bottom: 20px;
-}
-.second_text_contact {
-  margin-bottom: 50px;
 }
 .form-input-contact {
   width: 460px;
@@ -611,16 +525,10 @@ a {
 /* start footer */
 .background_end {
   background-color: black;
-  height: 100px;
-}
-.end {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 20px 0 10px;
 }
 .image-link-end {
-  display: inline-block;
-  width: 30px;
+  width: 27px;
   height: 30px;
   background-image: url(../img/end.png);
   background-repeat: no-repeat;
@@ -648,19 +556,5 @@ a {
 .img-7 {
   background-position: -294px 0;
   margin-right: 0;
-}
-.text-end {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 12px;
-  text-transform: capitalize;
-  line-height: 1.2;
-  font-family: "OpenSans", sans-serif;
-}
-.end_center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 35px;
 }
 /* end footer */

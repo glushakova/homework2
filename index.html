@@ -11,14 +11,69 @@
       href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <header class="header">
-      <div class="container header_container">
+      <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #000000">
+        <div class="col-md-5 col-sm-12">
+          <div class="row justify-content-between">
+            <a href="#">
+              <img class="logo" src="img/logo.png" alt="AXIT" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </div>
+        <div
+          class="col-lg-7 d-md-none collapse navbar-collapse flex-row-reverse"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav">
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#preview">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- <div class="container flex-center">
         <a href="#">
           <img class="logo" src="img/logo.png" alt="AXIT" />
         </a>
-        <ul class="menu" id="menu">
+        <ul class="menu white" id="menu">
           <li class="menu_item">
             <a href="#features">Features</a>
           </li>
@@ -38,14 +93,16 @@
         <div class="burger" id="burger">
           <span class="burger_line"></span>
         </div>
-      </div>
+      </div> -->
     </header>
-    <section class="bg" id="bg"></section>
+<!-- 
+    <section class="bg" id="bg"></section> -->
+
     <section class="top">
-      <div class="container top_container">
-        <div class="description">
+      <div class="container-me top_container flex-center">
+        <div class="description column">
           <img src="img/logo.png" alt="Logo" class="description_logo" />
-          <h1 class="description_title">
+          <h1 class="description_title white">
             modern axure template for beautiful prototypes
           </h1>
           <p class="description_text">
@@ -54,10 +111,10 @@
             consequuntur molestias molestiae, id ipsum ipsa ex eveniet
             aspernatur odio itaque exercitationem quasi!
           </p>
-          <a href="#" class="discription_button">Download</a>
+          <a href="#" class="button_white white">Download</a>
         </div>
-        <form class="top-form">
-          <h3 class="top-form-title">
+        <form class="top-form column">
+          <h3 class="top-form-title text-align">
             try your <span class="top-form-title-new_color">free</span> trial
             today
           </h3>
@@ -70,13 +127,17 @@
               class="top-form_input"
             />
           </div>
-          <input type="submit" value="Get started" class="top-form_submit" />
+          <input
+            type="submit"
+            value="Get started"
+            class="top-form_submit text-align white"
+          />
         </form>
       </div>
     </section>
 
     <section class="shadow">
-      <div class="social container">
+      <div class="flex-center container-me social ">
         <div class="container-social">
           <h3 class="social-title">social media</h3>
           <p class="social-text">
@@ -99,14 +160,18 @@
       </div>
     </section>
 
-    <section class="tabs">
-      <div class="container">
+    <section class="background_grey box tab">
         <a name="features"></a>
-        <div class="tabs-distance content-tabs-all">
+      <div class="container-me">
+        <div class="tabs-distance space-between-content flex-center">
           <div class="wrapper">
-            <label>
+            <label class="label-me">
               <input type="radio" class="checkbox" name="tab" checked />
-              <div class="fake-checkbox">tab 1</div>
+              <div
+                class="fake-checkbox flex-center justify-content-center white"
+              >
+                tab 1
+              </div>
 
               <div class="tabs-one">
                 <p class="headline">Tabs with soft transitioning effect.</p>
@@ -120,13 +185,17 @@
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. A
                   tenetur doloribus iure in recusandae, dolore tempore labore.
                 </p>
-                <a href="#" class="button_tabs">download</a>
+                <a href="#" class="button_orange white">download</a>
               </div>
             </label>
 
-            <label>
+            <label class="label-me">
               <input type="radio" class="checkbox" name="tab" />
-              <div class="fake-checkbox">tab 2</div>
+              <div
+                class="fake-checkbox flex-center justify-content-center white"
+              >
+                tab 2
+              </div>
 
               <div class="tabs-one">
                 <p class="headline">Tabs with soft transitioning effect.</p>
@@ -140,13 +209,17 @@
                   Sit facilis nostrum ipsam, harum animi autem eligendi odio
                   quis deserunt dolorum quas quos suscipit.
                 </p>
-                <a href="#" class="button_tabs">download</a>
+                <a href="#" class="button_orange white">download</a>
               </div>
-            </label>
+            </label class="label-me">
 
-            <label>
+            <label class="label-me">
               <input type="radio" class="checkbox" name="tab" />
-              <div class="fake-checkbox">tab 3</div>
+              <div
+                class="fake-checkbox flex-center justify-content-center white"
+              >
+                tab 3
+              </div>
 
               <div class="tabs-one">
                 <p class="headline">Tabs with soft transitioning effect.</p>
@@ -161,7 +234,7 @@
                   voluptatum fugiat corporis cupiditate earum non, doloribus
                   deserunt aperiam.
                 </p>
-                <a href="#" class="button_tabs">download</a>
+                <a href="#" class="button_orange white">download</a>
               </div>
             </label>
           </div>
@@ -169,36 +242,38 @@
         </div>
       </div>
     </section>
-
-    <section class="back_size container">
-      <a name="about"></a>
-      <h2 class="haupt_text">Why this is awesome</h2>
-      <p class="second_text">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-      </p>
-      <div class="row">
-        <div class="item">
+    
+    <section class="container-me box">
+     <a name="about"></a>
+      <div class="title text-align">
+        <h2 class="haupt_text">Why this is awesome</h2>
+        <p class="second_text grey-transparency">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p>
+      </div>
+      <div class="row-item">
+        <div class="item flex-center column">
           <img class="img" src="img/1.png" />
-          <h3>Troughtful Desing</h3>
-          <p class="second_text">
+          <h3 class="headline">Troughtful Desing</h3>
+          <p class="second_text text-align grey-transparency">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
             blanditiis iure dolorum quo consectetur recusandae minus sapiente
             perspiciatis quas?
           </p>
         </div>
-        <div class="item">
+        <div class="item flex-center column">
           <img class="img" src="img/2.png" />
-          <h3>Well Crafted</h3>
-          <p class="second_text">
+          <h3 class="headline">Well Crafted</h3>
+          <p class="second_text text-align grey-transparency">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
             blanditiis iure dolorum quo consectetur recusandae minus sapiente
             perspiciatis quas?
           </p>
         </div>
-        <div class="item">
+        <div class="item flex-center column">
           <img class="img" src="img/3.png" />
-          <h3>Easy to Customize</h3>
-          <p class="second_text">
+          <h3 class="headline">Easy to Customize</h3>
+          <p class="second_text text-align grey-transparency">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
             blanditiis iure dolorum quo consectetur recusandae minus sapiente
             perspiciatis quas?
@@ -207,19 +282,23 @@
       </div>
     </section>
 
-    <section class="pricing">
+    <section class="background_grey box">
       <a name="pricing"></a>
-      <div class="container">
-        <h2 class="haupt_text">pricing options</h2>
-        <p class="second_text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        </p>
+      <div class="container-me">
+        <div class="title text-align">
+          <h2 class="haupt_text">pricing options</h2>
+          <p class="second_text grey-transparency">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
         <div class="form-pricing">
           <div class="form-pricing-all">
             <ul class="list">
-              <li class="list-first-one">Basic</li>
-              <li class="list-first-two">$<b class="list-number">0</b></li>
-              <li class="list-first-three">Free for Life</li>
+              <li class="list-first-one text-align white">Basic</li>
+              <li class="list-first-two text-align white">
+                $<b class="list-number text-align white">0</b>
+              </li>
+              <li class="list-first-three text-align">Free for Life</li>
             </ul>
             <ul class="list list-second">
               <li class="list-second-item">1 gb of space</li>
@@ -232,10 +311,12 @@
           </div>
           <div class="form-pricing-all">
             <ul class="list">
-              <li class="list-first-one">Professional</li>
-              <li class="list-first-two">$<b class="list-number">19</b></li>
-              <li class="list-first-three">Monthly Payment</li>
-              <li class="list-first-four">our most popular</li>
+              <li class="list-first-one text-align white">Professional</li>
+              <li class="list-first-two text-align white">
+                $<b class="list-number text-align white">19</b>
+              </li>
+              <li class="list-first-three text-align">Monthly Payment</li>
+              <li class="list-first-four text-align white">our most popular</li>
             </ul>
             <ul class="list list-second">
               <li class="list-second-item">5 gb of space</li>
@@ -248,9 +329,11 @@
           </div>
           <div class="form-pricing-all">
             <ul class="list">
-              <li class="list-first-one">enterprise</li>
-              <li class="list-first-two">$<b class="list-number">70</b></li>
-              <li class="list-first-three">Monthly Payment</li>
+              <li class="list-first-one text-align white">enterprise</li>
+              <li class="list-first-two text-align white">
+                $<b class="list-number text-align white">70</b>
+              </li>
+              <li class="list-first-three text-align">Monthly Payment</li>
             </ul>
             <ul class="list list-second">
               <li class="list-second-item">unlimited space</li>
@@ -265,100 +348,152 @@
       </div>
     </section>
 
-    <section class="back_size container">
+    <section class="container-me box">
       <a name="preview"></a>
-      <h2 class="haupt_text">What our customers are saying</h2>
-      <p class="second_text">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-      </p>
-
-      <div class="customer-review">
-        <div class="customer-all">
-          <p class="customers_block">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque ea
-            id cumque blanditiis distinctio saepe delectus quisquam doloribus
-            alias impedit.
-          </p>
-          <div class="about-customer">
-            <img class="img_customer" src="img/avatar.png" />
-            <div class="customer-name">
-              <h3 class="text-customer">Jeremy H.</h3>
-              <h5 class="second-text-customer">Manager</h5>
+      <div class="title text-align">
+        <h2 class="haupt_text">What our customers are saying</h2>
+        <p class="second_text grey-transparency">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p>
+      </div>
+      <div class="width">
+        <div class="customer-review flex-center space-between-content">
+          <div class="customer-all">
+            <p class="customers_block">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
+              ea id cumque blanditiis distinctio saepe delectus quisquam
+              doloribus alias impedit.
+            </p>
+            <div class="about-customer">
+              <img class="img_customer" src="img/avatar.png" />
+              <div class="customer-name justify-content-center column">
+                <h3 class="text-customer">Jeremy H.</h3>
+                <h5 class="second-text-customer">Manager</h5>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="customer-all">
-          <p class="customers_block">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque ea
-            id cumque blanditiis distinctio saepe delectus quisquam doloribus
-            alias impedit.
-          </p>
-          <div class="about-customer">
-            <img class="img_customer" src="img/avatar.png" />
-            <div class="customer-name">
-              <h3 class="text-customer">John s.</h3>
-              <h5 class="second-text-customer">freelancer</h5>
+          <div class="customer-all">
+            <p class="customers_block">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
+              ea id cumque blanditiis distinctio saepe delectus quisquam
+              doloribus alias impedit.
+            </p>
+            <div class="about-customer">
+              <img class="img_customer" src="img/avatar.png" />
+              <div class="customer-name justify-content-center column">
+                <h3 class="text-customer">John s.</h3>
+                <h5 class="second-text-customer">freelancer</h5>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="customer-all">
-          <p class="customers_block">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque ea
-            id cumque blanditiis distinctio saepe delectus quisquam doloribus
-            alias impedit.
-          </p>
-          <div class="about-customer">
-            <img class="img_customer" src="img/avatar.png" />
-            <div class="customer-name">
-              <h3 class="text-customer">susan w.</h3>
-              <h5 class="second-text-customer">Photographer</h5>
+          <div class="customer-all">
+            <p class="customers_block">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
+              ea id cumque blanditiis distinctio saepe delectus quisquam
+              doloribus alias impedit.
+            </p>
+            <div class="about-customer">
+              <img class="img_customer" src="img/avatar.png" />
+              <div class="customer-name justify-content-center column">
+                <h3 class="text-customer">susan w.</h3>
+                <h5 class="second-text-customer">Photographer</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="customer-all">
+            <p class="customers_block">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
+              ea id cumque blanditiis distinctio saepe delectus quisquam
+              doloribus alias impedit.
+            </p>
+            <div class="about-customer">
+              <img class="img_customer" src="img/avatar.png" />
+              <div class="customer-name justify-content-center column">
+                <h3 class="text-customer">polina z.</h3>
+                <h5 class="second-text-customer">Photographer</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="customer-all">
+            <p class="customers_block">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
+              ea id cumque blanditiis distinctio saepe delectus quisquam
+              doloribus alias impedit.
+            </p>
+            <div class="about-customer">
+              <img class="img_customer" src="img/avatar.png" />
+              <div class="customer-name justify-content-center column">
+                <h3 class="text-customer">vova u.</h3>
+                <h5 class="second-text-customer">Photographer</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="customer-all">
+            <p class="customers_block">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
+              ea id cumque blanditiis distinctio saepe delectus quisquam
+              doloribus alias impedit.
+            </p>
+            <div class="about-customer">
+              <img class="img_customer" src="img/avatar.png" />
+              <div class="customer-name justify-content-center column">
+                <h3 class="text-customer">kate f.</h3>
+                <h5 class="second-text-customer">Photographer</h5>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="background_stylish">
-      <div class="stylish container">
-        <h2 class="haupt_text_stylish">stylish axure design</h2>
-        <p class="second_text_stylish">
+    <section class="background_stylish box">
+      <div class="container-me title text-align">
+        <h2 class="haupt_text white">stylish axure design</h2>
+        <p class=" white-transparency second_text ">
           Use the sections you need, remove the ones you don't. Create gorgeous
           prototypes faster then ever!
         </p>
-        <a href="#" class="button_stylish">Download</a>
+      </div>
+      <div class="flex-center column">
+        <a href="#" class="button_white white">Download</a>
       </div>
     </section>
 
-    <section class="contact container">
+    <section class="container-me box">
       <a name="contact"></a>
-      <h2 class="haupt_text">Contact us</h2>
-      <p class="second_text second_text_contact">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-      </p>
-      <div class="container-contact">
-        <div class="form-contact">
+      <div class="title text-align">
+        <h2 class="haupt_text">Contact us</h2>
+        <p class="second_text grey-transparency">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        </p>
+      </div>
+      <div class="container-contact flex-center">
+        <div class="form-contact flex-center column">
           <input placeholder="Name" type="text" class="top-form_input" />
           <input placeholder="E-mail" type="text" class="top-form_input" />
           <input placeholder="Subject" type="text" class="top-form_input" />
         </div>
-        <div class="form-contact">
+        <div class="form-contact flex-center column">
           <textarea
             placeholder="Message"
-            rows="10"
+            rows="8.1"
             class="top-form_input textarea"
           ></textarea>
         </div>
       </div>
-      <div class="stylish">
-        <a href="#" class="button_contact ">send message</a>
+      <div class="flex-center column">
+        <a href="#" class="button_orange white">send message</a>
       </div>
     </section>
 
-    <footer class="background_end end">
-      <div class="end_center container">
-        <div class="social-all-icons">
+    <footer class="background_end end box">
+      <div class="flex-center justify-content-center column container-me">
+        <div class="justify-content-center social-all-icons">
           <a href="https://www.facebook.com/" class="image-link-end img-1"></a>
           <a href="https://twitter.com" class="image-link-end  img-2"></a>
           <a href="https://www.google.by/" class="image-link-end img-3"></a>
@@ -370,9 +505,28 @@
             class="image-link-end img-7"
           ></a>
         </div>
-        <div class="text-end">© 2015 Axure Themes</div>
+        <div class="second_text white-transparency">© 2015 Axure Themes</div>
       </div>
     </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/main.js"></script>
   </body>
 </html>
